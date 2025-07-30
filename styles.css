@@ -1,0 +1,87 @@
+body {
+  background: #e60073;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.intro {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.letter {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f1c6db;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff3399;
+}
+
+/* GALLERY STYLES */
+
+.gallery {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.photo-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+}
+
+figure img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: clip-path 0.4s ease, transform 0.3s ease;
+}
+
+/* Heart hover effect */
+figure img:hover {
+  clip-path: path('M80 30 C60 0, 0 30, 80 140 C160 30, 100 0, 80 30 Z');
+  transform: scale(1.05);
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #444;
+  text-align: center;
+}
